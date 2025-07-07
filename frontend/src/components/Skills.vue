@@ -6,24 +6,26 @@ const skills = ref([])
 onMounted(async () => {
   try {
     const response = await axios.get('http://localhost:3000/api/skills')
-    skills.value = response.data
+    skills.value = [...response.data, ...response.data] // Duplikasi untuk loop
   } catch (error) {
     console.error(error)
   }
 })
 </script>
 <template>
-  <section id="skill" class="py-20 bg-gray-50">
+  <section id="skill" class="py-20">
     <div class="container mx-auto px-6">
       <SectionTitle title="Keahlian & Teknologi" />
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div
-          v-for="skill in skills"
-          :key="skill.name"
-          class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300"
-        >
-          <h3 class="text-xl font-bold text-gray-800">{{ skill.name }}</h3>
-          <p class="text-gray-500 mt-2">{{ skill.level }}</p>
+      <div class="relative overflow-hidden group">
+        <div class="absolute -inset-2 bg-gradient-to-r from-dark-glow-start to-dark-glow-end rounded-full blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+        <div class="marquee flex space-x-16">
+          <div
+            v-for="(skill, index) in skills"
+            :key="index"
+            class="flex-shrink-0"
+          >
+            <img :src="skill.logo" :alt="skill.name" class="h-20 w-20 object-contain transition-transform duration-300 hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/80x80/cccccc/ffffff?text=Err'"/>
+          </div>
         </div>
       </div>
     </div>

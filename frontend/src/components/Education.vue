@@ -1,5 +1,4 @@
 <script setup>
-// Data ini akan kita pindah ke backend nanti
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import SectionTitle from './SectionTitle.vue'
@@ -14,36 +13,22 @@ onMounted(async () => {
 })
 </script>
 <template>
-  <section id="pendidikan" class="py-20 bg-white">
+  <section id="pendidikan" class="py-20">
     <div class="container mx-auto px-6">
       <SectionTitle title="Riwayat Pendidikan" />
-      <div class="relative">
-        <div class="absolute h-full border-r-2 border-gray-300" style="left: 50%"></div>
-        <div
-          v-for="(edu, index) in educationHistory"
-          :key="edu.id"
-          class="mb-8 flex justify-between items-center w-full"
-        >
-          <div v-if="index % 2 === 0" class="w-full flex">
-            <div class="w-1/2 pr-8 text-right">
-              <p class="font-semibold text-blue-600">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text- gray-800">{{ edu.institution }}</h3>
-              <p class="text-gray-600">{{ edu.major }}</p>
-            </div>
-            <div class="w-1/2 flex justify-start">
-              <div class="w-4 h-4 bg-blue-600 rounded-full z-10"></div>
-            </div>
-          </div>
-          <div v-else class="w-full flex">
-            <div class="w-1/2 flex justify-end">
-              <div class="w-4 h-4 bg- blue-600 rounded-full z-10"></div>
-            </div>
+      <div class="relative mt-12">
+        <!-- Garis vertikal timeline -->
+        <div class="absolute left-4 w-0.5 h-full bg-blue-200 dark:bg-gray-700"></div>
 
-            <div class="w-1/2 pl-8 text-left">
-              <p class="font-semibold text-blue-600">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text- gray-800">{{ edu.institution }}</h3>
-              <p class="text-gray-600">{{ edu.major }}</p>
-            </div>
+        <div v-for="edu in educationHistory" :key="edu.id" class="relative pl-12 mb-10">
+          <!-- Titik pada timeline -->
+          <div class="absolute left-4 top-1 w-4 h-4 bg-blue-600 dark:bg-dark-primary rounded-full transform -translate-x-1/2 border-4 border-gray-100 dark:border-dark-background-light"></div>
+          
+          <!-- Kartu konten -->
+          <div class="bg-white/60 dark:bg-dark-glass-bg backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-dark-primary/30 hover:scale-[1.02]">
+            <p class="font-semibold text-blue-600 dark:text-dark-primary mb-1">{{ edu.period }}</p>
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-dark-text">{{ edu.institution }}</h3>
+            <p class="text-gray-600 dark:text-dark-text-secondary">{{ edu.major }}</p>
           </div>
         </div>
       </div>
