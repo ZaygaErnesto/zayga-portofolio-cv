@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle.vue'
 const skills = ref([])
 onMounted(async () => {
   try {
-    const response = await axios.get('http://localhost:3000/api/skills')
+    const response = await axios.get('/api/skills')
     skills.value = [...response.data, ...response.data] // Duplikasi untuk loop
   } catch (error) {
     console.error(error)

@@ -1,9 +1,5 @@
-// api/education.js
+const { projects } = require('./data');
 
-// Impor hanya data yang diperlukan dari file data.js
-const { educationHistory } = require('./data');
-
-// Ekspor fungsi serverless
 module.exports = (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -15,5 +11,5 @@ module.exports = (req, res) => {
     return;
   }
 
-  res.status(200).json(educationHistory);
-};
+  res.status(200).json(projects);
+}; 
