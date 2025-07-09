@@ -1,6 +1,7 @@
 <script setup>
-// Pastikan path ini benar sesuai lokasi file Anda di dalam src/assets
-import profileImage from '/public/ZAYGA - 2.png';
+// Ganti: import profileImage from '/ZAYGA - 2.png';
+// Dengan:
+const profileImage = '/ZAYGA - 2.png'
 </script>
 
 <template>

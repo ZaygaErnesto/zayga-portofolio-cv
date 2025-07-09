@@ -18,7 +18,7 @@ const skills = [
 const projects = [ 
     {
         title: 'Website Toko Online',
-        image: '/public/web.png',
+        image: '/web.png',
         description: 'Platform e-commerce dengan fitur keranjang belanja.',
         tech: ['Vue.js', 'Laravel', 'MySQL'],
         link: '#',

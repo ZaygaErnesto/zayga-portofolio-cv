@@ -6,7 +6,7 @@ const educationHistory = ref([])
 onMounted(async () => {
   try {
     const response = await axios.get('/api/education')
-    educationHistory.value = response.data
+    educationHistory.value = [...response.data, ...response.data]
   } catch (error) {
     console.error(error)
   }
