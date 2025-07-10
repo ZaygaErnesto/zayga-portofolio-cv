@@ -58,11 +58,11 @@ onUnmounted(() => {
 })
 
 const navLinks = [
-  { id: 'profil', text: 'Profil' },
-  { id: 'pendidikan', text: 'Pendidikan' },
-  { id: 'skill', text: 'Skill' },
-  { id: 'proyek', text: 'Proyek' },
-  { id: 'kontak', text: 'Kontak' },
+  { id: 'profil', text: 'Home' },
+  { id: 'about', text: 'About' },
+  { id: 'skill', text: 'Skills' },
+  { id: 'proyek', text: 'Projects' },
+  { id: 'kontak', text: 'Contact' },
 ]
 </script>
 

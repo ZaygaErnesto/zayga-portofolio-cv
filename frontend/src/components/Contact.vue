@@ -1,13 +1,14 @@
 <script setup>
 const navLinks = [
-  { id: 'profil', text: 'Profil' },
-  { id: 'pendidikan', text: 'Pendidikan' },
-  { id: 'skill', text: 'Skill' },
-  { id: 'proyek', text: 'Proyek' },
+  { id: 'profil', text: 'Home' },
+  { id: 'about', text: 'About' },
+  { id: 'skill', text: 'Skills' },
+  { id: 'proyek', text: 'Projects' },
+  { id: 'kontak', text: 'Contact' },
 ]
 </script>
 <template>
-  <footer id="kontak" class="py-16 px-4 bg-white/50 dark:bg-dark-background-light/50 border-t border-gray-200 dark:border-gray-800">
+  <footer id="kontak" class="py-5 px-4 bg-white/50 dark:bg-dark-background-light/50 border-t border-gray-200 dark:border-gray-800">
     <div class="container mx-auto">
       
       <!-- Konten Utama Footer dengan Grid -->
@@ -18,9 +19,6 @@ const navLinks = [
           <h3 class="text-2xl font-bold text-gray-800 dark:text-dark-text mb-3">
             Zayga Ernesto
           </h3>
-          <p class="text-gray-600 dark:text-dark-text-secondary mb-4">
-            Seorang pengembang web yang bersemangat dalam menciptakan antarmuka yang fungsional dan indah.
-          </p>
           <a
             href="mailto:zernesto04@gmail.com"
             class="text-blue-600 dark:text-dark-primary font-semibold hover:underline"

@@ -19,11 +19,6 @@ export default {
         },
       },
       keyframes: {
-        // Keyframe untuk bingkai gradien yang berputar
-        'spinning-gradient': {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
         aurora: {
           '0%': { backgroundPosition: '0% 50%, 50% 100%, 100% 50%' },
           '25%': { backgroundPosition: '25% 0%, 75% 50%, 125% 0%' },
@@ -40,14 +35,18 @@ export default {
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         'fade-in': { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        // Warna kursor diubah menjadi biru
+        blink: {
+          '0%, 100%': { borderColor: 'transparent' },
+          '50%': { borderColor: '#58A6FF' },
+        },
       },
       animation: {
-        // Menambahkan animasi spinning-gradient
-        'spinning-gradient': 'spinning-gradient 4s linear infinite',
         aurora: 'aurora 20s ease-in-out infinite',
         'slide-in-left': 'slide-in-left 0.7s ease-out forwards',
         'slide-in-right': 'slide-in-right 0.7s ease-out forwards',
         'fade-in': 'fade-in 0.5s ease-out forwards',
+        blink: 'blink 1s step-end infinite',
       },
     },
   },

@@ -4,15 +4,30 @@ const educationHistory = [
     { id: 2, period: '2020 - 2023', institution: 'SMKN 7 Samarinda', major: 'Rekayasa Perangkat Lunak' } 
 ];
 
-const skills = [ 
-    { name: 'Vue.js', level: 'Mahir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
-    { name: 'JavaScript', level: 'Mahir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-    { name: 'Tailwind CSS', level: 'Mahir', logo: 'https://www.svgrepo.com/show/374118/tailwind.svg' },
-    { name: 'Laravel', level: 'Menengah', logo: 'https://www.svgrepo.com/show/353985/laravel.svg' },
-    { name: 'Express.js', level: 'Menengah', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
-    { name: 'PostgreSQL', level: 'Menengah', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-    { name: 'Git & GitHub', level: 'Mahir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-    { name: 'HTML5 & CSS3', level: 'Mahir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' }, 
+const skills = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "Vue.js", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+      { name: "JavaScript", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "Tailwind CSS", level: 90, logo: "https://www.svgrepo.com/show/374118/tailwind.svg" },
+      { name: "HTML5 & CSS3", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" }
+    ]
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "Laravel", level: 80, logo: "https://www.svgrepo.com/show/353985/laravel.svg" },
+      { name: "Express.js", level: 80, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+      { name: "PostgreSQL", level: 80, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" }
+    ]
+  },
+  {
+    title: "Tools",
+    skills: [
+      { name: "Git & GitHub", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" }
+    ]
+  }
 ];
 
 const projects = [ 
