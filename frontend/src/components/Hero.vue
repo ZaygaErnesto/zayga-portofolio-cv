@@ -55,7 +55,7 @@ function setText(value) {
         <a href="#proyek" class="px-8 py-3 rounded-lg font-semibold bg-blue-600 hover:bg-blue-700 dark:bg-dark-primary dark:hover:bg-dark-primary-hover text-white">
           View My Work
         </a>
-        <a href="/path/to/cv.pdf" download class="px-8 py-3 rounded-lg font-semibold border border-blue-500 dark:border-dark-primary text-blue-600 dark:text-dark-primary hover:bg-blue-500/10 dark:hover:bg-dark-primary/10">
+        <a href="/CV_ZaygaErnesto.pdf" download class="px-8 py-3 rounded-lg font-semibold border border-blue-500 dark:border-dark-primary text-blue-600 dark:text-dark-primary hover:bg-blue-500/10 dark:hover:bg-dark-primary/10">
           Download CV
         </a>
       </div>
