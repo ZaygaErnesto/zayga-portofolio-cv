@@ -41,7 +41,7 @@ onMounted(async () => {
         >
           <!-- Gambar dengan Gradien Overlay -->
           <div class="relative">
-            <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/500x300/cccccc/ffffff?text=Gagal+Muat'"/>
+            <img :src="project.image_url" :alt="project.title" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/500x300/cccccc/ffffff?text=Gagal+Muat'"/>
             <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
           </div>
 
