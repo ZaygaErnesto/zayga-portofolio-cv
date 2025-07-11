@@ -73,7 +73,7 @@ function setText(value) {
       </div>
     </div>
 
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div class="absolute bottom-8 w-full flex justify-center animate-bounce">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-blue-500 dark:text-dark-primary"><path d="m6 9 6 6 6-6"/></svg>
     </div>
   </section>
